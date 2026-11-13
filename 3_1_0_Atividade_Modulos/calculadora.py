@@ -38,8 +38,7 @@ def executar_operacao():
             print(f"{num1} / {num2} = {num1 / num2}")
     print("-" * 17 + "\n")
 
-if __name__ == "__main__":
-    loop_ativo = True
-    while loop_ativo:
-        executar_operacao()
-        loop_ativo = deseja_continuar("Deseja realizar um novo cálculo matemático? (S/N): ")
+loop = True
+while loop:
+    executar_operacao()
+    loop = deseja_continuar("Deseja realizar um novo cálculo matemático? (S/N): ")

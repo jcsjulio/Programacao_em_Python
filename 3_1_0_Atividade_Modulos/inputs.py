@@ -17,7 +17,7 @@ while start:
     start = mod_continuar.deseja_continuar("Deseja realizar um novo cadastro? (S/N): ")
 
 
-# if __name__ == "__main__":
+
 #    loop_ativo = True
 #    while loop_ativo:
 #        executar_cadastro()

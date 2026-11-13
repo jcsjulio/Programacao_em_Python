@@ -19,8 +19,7 @@ def calcular_raio():
     print(f"\n💡 Resultado Técnico:")
     print(f"-> Para uma circunferência de {circunferencia:.2f}, o raio (r) é: {raio:.4f}\n")
 
-if __name__ == "__main__":
-    loop_ativo = True
-    while loop_ativo:
-        calcular_raio()
-        loop_ativo = deseja_continuar("Deseja realizar um novo cálculo? (S/N): ")
+loop_ativo = True
+while loop_ativo:
+    calcular_raio()
+    loop_ativo = deseja_continuar("Deseja realizar um novo cálculo? (S/N): ")

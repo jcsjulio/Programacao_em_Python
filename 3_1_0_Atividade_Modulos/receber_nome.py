@@ -14,8 +14,8 @@ def executar_cadastro():
     print(f"• Peso: {peso:.2f} kg")
     print("="*35 + "\n")
 
-if __name__ == "__main__":
-    loop_ativo = True
-    while loop_ativo:
-        executar_cadastro()
-        loop_ativo = deseja_continuar("Deseja realizar um novo cadastro? (S/N): ")
+
+loop_ativo = True
+while loop_ativo:
+    executar_cadastro()
+    loop_ativo = deseja_continuar("Deseja realizar um novo cadastro? (S/N): ")

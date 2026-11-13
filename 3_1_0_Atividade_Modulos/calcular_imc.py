@@ -24,8 +24,8 @@ def rotina_imc():
     print(f"• IMC: {imc:.2f} ({classificar_imc(imc)})")
     print("="*40 + "\n")
 
-if __name__ == "__main__":
-    loop_ativo = True
-    while loop_ativo:
-        rotina_imc()
-        loop_ativo = deseja_continuar("Deseja realizar um novo cálculo? (S/N): ")
+
+loop_ativo = True
+while loop_ativo:
+    rotina_imc()
+    loop_ativo = deseja_continuar("Deseja realizar um novo cálculo? (S/N): ")
