@@ -25,3 +25,13 @@ def recebe_senha(mensagem):
         except:
             print("Valor invalido!")
     return senha
+
+
+
+def recebe_int(mensagem):
+    while True:
+        try:
+            numero = int(input(mensagem))
+            return numero
+        except ValueError:
+            print("Valor Inválido! Digite apenas números inteiros.")
