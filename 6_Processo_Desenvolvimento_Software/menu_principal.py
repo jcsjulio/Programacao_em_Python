@@ -1,4 +1,4 @@
-import mod_msg, mod_inputs, calculadora
+import mod_msg, mod_inputs, calculadora, frete
 
 
 def recebe_opcao():
@@ -13,7 +13,7 @@ def recebe_opcao():
                 print("Aqui chamo calcular")
                 calculadora.main()
             case 2:
-                print("aqui chamo Calcular frete")
+                frete.main()
             case _:
                 print("opção invalida")
 def main():

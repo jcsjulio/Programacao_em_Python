@@ -35,3 +35,15 @@ def recebe_int(mensagem):
             return numero
         except ValueError:
             print("Valor Inválido! Digite apenas números inteiros.")
+
+
+def recebe_float(mensagem):
+    while True:
+        try:
+            numero = float(input(mensagem).strip().replace(",", "."))
+            if numero < 0:
+                print("Valor invalido! Digite um numero maior ou igual a zero.")
+                continue
+            return numero
+        except ValueError:
+            print("Valor Invalido! Digite apenas numeros.")
