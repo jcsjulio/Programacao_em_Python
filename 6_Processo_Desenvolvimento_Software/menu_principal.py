@@ -1,8 +1,11 @@
-import mod_msg, mod_inputs, calculadora, frete
+import mod_msg, mod_inputs, calculadora, frete, limpatela
+
 
 
 def recebe_opcao():
     while True:
+        limpatela.limpar_tela()
+        mod_msg.msg_inicial()
         mod_msg.msg_menu_principal2()
         opcao = mod_inputs.recebe_int("Digite uma opção do menu: ")
         match opcao:
@@ -10,11 +13,16 @@ def recebe_opcao():
                 print("Sair do programa")
                 break
             case 1:
-                print("Aqui chamo calcular")
+                limpatela.limpar_tela()
+                mod_msg.msg_inicial()
                 calculadora.main()
             case 2:
+                limpatela.limpar_tela()
+                mod_msg.msg_inicial()
                 frete.main()
             case _:
+                limpatela.limpar_tela()
+                mod_msg.msg_inicial()
                 print("opção invalida")
 def main():
     

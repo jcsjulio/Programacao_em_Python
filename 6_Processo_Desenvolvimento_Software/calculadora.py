@@ -1,6 +1,6 @@
 from rich.console import Console
 from rich.panel import Panel
-
+import limpatela
 console = Console()
 
 def exibir_menu_calc():

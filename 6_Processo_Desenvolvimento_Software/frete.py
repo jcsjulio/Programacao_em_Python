@@ -14,7 +14,7 @@ DESTINOS = {
     3: ("Campo de Marte-SP", 98),
     4: ("Pinto Martins-CE", 2922),
     5: ("Eduardo Gomes-AM", 6294),
-,
+
 }
 
 
@@ -75,14 +75,14 @@ def calcular_custo(tipo_embalagem, destino, distancia):
         altura = mod_inputs.recebe_float("Altura (m): ")
         largura = mod_inputs.recebe_float("Largura (m): ")
         profundidade = mod_inputs.recebe_float("Profundidade (m): ")
-        fator = 0.26
+        fator = 0.026
     else:
         console.print("[bold]Embalagem Container[/bold]")
         console.print("Unidades: altura, largura e profundidade em centimetros.")
         altura = mod_inputs.recebe_float("Altura (cm): ")
         largura = mod_inputs.recebe_float("Largura (cm): ")
         profundidade = mod_inputs.recebe_float("Profundidade (cm): ")
-        fator = 0.37
+        fator = 0.037
 
     peso = mod_inputs.recebe_float("Peso (kg): ")
 

@@ -2,6 +2,15 @@ import pyfiglet
 from rich.console import Console
 from rich.panel import Panel
 
+
+import os
+import subprocess
+
+
+def limpar_tela():
+    comando = 'cls' if os.name == 'nt' else 'clear'
+    subprocess.run(comando, shell=True)
+
 console = Console()
 
 def msg_inicial():
@@ -24,6 +33,7 @@ def msg_menu_principal():
 
 
 def msg_menu_principal2():
+    
     opcoes = (
         "[bold cyan][1][/bold cyan] Calculadora\n"
         "[bold cyan][2][/bold cyan] Calcula Frete\n"

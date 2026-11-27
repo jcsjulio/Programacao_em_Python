@@ -43,4 +43,8 @@ F = Fator de Custo Operacional (0.37)
 D = Distância (KM)
 
 FÓRMULA =((Y^ * X^ * Z^ * W)^ * (1 + F) )^ * (1+(D^ * 9.8))
-  
+
+
+   print("╔══════════════════════════════════════════════════════════╗")
+      print("║  [1] Calculadora   |   [2] Calcula Frete   |   [3] Sair  ║")
+      print("╚══════════════════════════════════════════════════════════╝\n")
